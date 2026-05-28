@@ -31,7 +31,7 @@ frontend-uniesp/
 
 ## 🚀 Como Rodar o Projeto
 
-Não é necessário instalar nada. Siga os passos abaixo:
+baixe todas as imagens junto com o arquivo
 
 ### Opção 1 — Baixar o ZIP (mais fácil)
 
