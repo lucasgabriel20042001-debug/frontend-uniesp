@@ -35,7 +35,7 @@ Não é necessário instalar nada. Siga os passos abaixo:
 
 ### Opção 1 — Baixar o ZIP (mais fácil)
 
-1. Acesse o repositório: [github.com/lucasgabriel20042001-debug/frontend-uniesp](https://github.com/lucasgabriel20042001-debug/frontend-uniesp)
+1. Acesse o repositório: [github.com/lucasgabriel20042001-debug/frontend-uniesp](https://github.com/lucasgabriel20042001-debug/frontend-uniesp/edit/main/readme.md)
 2. Clique no botão verde **`<> Code`**
 3. Selecione **Download ZIP**
 4. Extraia o arquivo baixado
