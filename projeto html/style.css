@@ -1,0 +1,323 @@
+/* ============================================
+   RESET & BASE
+   ============================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #d4d4d4;
+  color: #333;
+}
+
+/* ============================================
+   WRAPPER CENTRAL (toda a página)
+   ============================================ */
+.header__inner,
+.hero,
+.content__inner,
+.footer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+.header {
+  background-color: #1c1c1c;
+  width: 100%;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* --- Logo --- */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo__icon {
+  width: 42px;
+  height: 52px;
+  object-fit: contain;
+}
+
+.logo__text {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 8px;
+  line-height: 1.2;
+}
+
+.logo__title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #4db8d4;
+  font-weight: 400;
+}
+
+.logo__subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.85rem;
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/* --- Navegação --- */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #cccccc;
+  transition: color 0.2s;
+}
+
+.nav__link:hover {
+  color: #4db8d4;
+}
+
+.nav__link--active {
+  color: #4db8d4;
+}
+
+.nav__sep {
+  color: #555555;
+  font-size: 0.8rem;
+}
+
+/* ============================================
+   HERO
+   ============================================ */
+.hero {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+  line-height: 0;
+}
+
+.hero__bg {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.hero__box {
+  background-color: rgba(35, 52, 75, 0.88);
+  padding: 30px 32px;
+  width: 370px;
+  color: #ffffff;
+}
+
+.hero__quote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.35rem;
+  line-height: 1.55;
+  color: #ffffff;
+  margin-bottom: 22px;
+}
+
+.hero__cta {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.hero__cta-icon {
+  width: 24px;
+  height: 30px;
+  object-fit: contain;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.hero__cta-text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+.hero__phone {
+  color: #c9a227;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* ============================================
+   CONTEÚDO PRINCIPAL (duas colunas)
+   ============================================ */
+.content {
+  background-color: #f0f0f0;
+  padding: 30px 0 40px;
+}
+
+.content__inner {
+  display: flex;
+  gap: 30px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Colunas */
+.col {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ============================================
+   CABEÇALHO DAS SEÇÕES (barra colorida)
+   ============================================ */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  margin-bottom: 18px;
+}
+
+.section-header--cyan {
+  background-color: #29b6d3;
+}
+
+.section-header--gold {
+  background-color: #b5924c;
+}
+
+.section-header__icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.section-header__title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+/* ============================================
+   TEXTOS DAS SEÇÕES
+   ============================================ */
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.8rem;
+  line-height: 1.65;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+/* ============================================
+   IMAGEM DESTINO (coluna esquerda)
+   ============================================ */
+.img-destino {
+  width: 100%;
+  line-height: 0;
+}
+
+.img-destino img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ============================================
+   GRADE NOSSA FROTA (coluna direita)
+   ============================================ */
+.grid-frota {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 6px;
+}
+
+.grid-frota__item {
+  overflow: hidden;
+  line-height: 0;
+}
+
+.grid-frota__item img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.grid-frota__item img:hover {
+  transform: scale(1.04);
+}
+
+/* ============================================
+   RODAPÉ
+   ============================================ */
+.footer {
+  background-color: #e0e0e0;
+  padding: 22px 20px;
+  max-width: 100%;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer__text {
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  color: #555;
+}
