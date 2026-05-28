@@ -35,7 +35,7 @@ baixe todas as imagens junto com o arquivo
 
 ### Opção 1 — Baixar o ZIP (mais fácil)
 
-1. Acesse o repositório: [github.com/lucasgabriel20042001-debug/frontend-uniesp](https://github.com/lucasgabriel20042001-debug/frontend-uniesp/edit/main/readme.md)
+1. Acesse o repositório: [github.com/lucasgabriel20042001-debug/frontend-uniesp](file:///C:/Users/LUCAS%20GABRIEL/Downloads/index%20(2)%20(1).html)
 2. Clique no botão verde **`<> Code`**
 3. Selecione **Download ZIP**
 4. Extraia o arquivo baixado
